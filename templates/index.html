@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello world!</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+   {% for cafe in cafes %}
+
+                <div class="col">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src={{cafe[3]}} class="img-fluid rounded-start" alt="cafe-image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">{{cafe[1]}}</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+    
+
+    {% endfor %}
+   {% endblock %}
