@@ -1,11 +1,16 @@
 {% extends "layout.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}{{ total_cafes }} Work-Friendly places in London{% endblock %}
 
 {% block main %}
-   {% for cafe in cafes %}
 
+    <div class="container">
+        <div class="row align-content-center">
                 <div class="col">
+                    <h3>{{ total_cafes }} Work-Friendly places</h3>
+                    <p>
+                        The best work and study-friendly cafes, restaurants, and hotel lobbies in London. Find venues with free and reliable Wi-Fi hotspots, ample power sockets, and comfy seating areas.</p>
+                    {% for cafe in cafes %}
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                         <div class="col-md-4">
@@ -14,13 +19,31 @@
                         <div class="col-md-8">
                             <div class="card-body">
                             <h5 class="card-title">{{cafe[1]}}</h5>
+                            <h6 class="align-content-between d-inline-flex align-content-between">
+                                <span class="material-symbols-outlined me-2">pin_drop</span>{{cafe[4]}}</h6><br>
+                            {% if cafe[5] == true %}
+                                <span class="material-symbols-outlined">power</span>
+                            {% endif %}
+                            {% if cafe[7] == true %}
+                                <span class="material-symbols-outlined">wifi</span>
+                            {% endif %}
+                            {% if cafe[8] == true %}
+                                <span class="material-symbols-outlined">phone_in_talk</span>
+                            {% endif %}
+                            {% if cafe[6] == true %}
+                                <span class="material-symbols-outlined">wc</span>
+                            {% endif %}
+                            <p>Seats {{cafe[9]}} <br>Coffee price {{cafe[10]}} <br>
+                                <a class="text-decoration-none" href="{{cafe[2]}}">View in google maps</a>
+                            </p>
+
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
-    
-
-    {% endfor %}
-   {% endblock %}
+{% endblock %}
