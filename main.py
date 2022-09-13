@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect
 from flask import request
+import datetime
 import sqlite3
 
 app = Flask(__name__)
@@ -36,7 +37,11 @@ def home():
     cafes = get_cafes()
     # Get index of last cafe and add 1 to it
     total_cafes = (cafes[-1][0]) + 1
-    return render_template("index.html", cafes=cafes, total_cafes=total_cafes)
+
+    # Current date
+    current_year = datetime.date.today().year
+    
+    return render_template("index.html", cafes=cafes, total_cafes=total_cafes, year=current_year)
 
 
 @app.route("/add_cafe", methods=["GET", "POST"])
