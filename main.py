@@ -1,5 +1,4 @@
-from flask import Flask, render_template, redirect
-from flask import request
+from flask import Flask, render_template, redirect, request
 import datetime
 import sqlite3
 
