@@ -32,15 +32,16 @@ def add_new_cafe(name, map_url, img_url, location, has_sockets, has_toilet, has_
     conn.close()
 
 
+# Current date
+current_year = datetime.date.today().year
+
+
 @app.route("/")
 def home():
     cafes = get_cafes()
     # Get index of last cafe and add 1 to it
     total_cafes = (cafes[-1][0]) + 1
 
-    # Current date
-    current_year = datetime.date.today().year
-    
     return render_template("index.html", cafes=cafes, total_cafes=total_cafes, year=current_year)
 
 
@@ -85,7 +86,7 @@ def add_cafe():
 
         return redirect("/")
 
-    return render_template("add_cafe.html")
+    return render_template("add_cafe.html", year=current_year)
 
 
 if __name__ == "__main__":
