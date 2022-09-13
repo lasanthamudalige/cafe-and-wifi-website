@@ -3,48 +3,52 @@
 {% block title %}Add new cafe{% endblock %}
 
 {% block main %}
-    <form action="/add_cafe", method="post">
-        <div class="mb-3">
-            <label for="name" class="form-label">Cafe name</label>
-            <input type="text" class="form-control" name="name" aria-describedby="cafe-name">
-        </div>
-        <div class="mb-3">
-            <label for="map_url" class="form-label">Map url</label>
-            <input type="text" class="form-control" name="map_url" aria-describedby="map-url">
-        </div>
-        <div class="mb-3">
-            <label for="img_url" class="form-label">Image url</label>
-            <input type="text" class="form-control" name="img_url" aria-describedby="image-url">
-        </div>
-        <div class="mb-3">
-            <label for="location" class="form-label">Location</label>
-            <input type="text" class="form-control" name="location" aria-describedby="location">
-        </div>
-        <div class="mb-3">
-            <label for="seats" class="form-label">Seats</label>
-            <input type="text" class="form-control" name="seats" aria-describedby="num-of-seats">
-        </div>
-        <div class="mb-3">
-            <label for="coffee_price" class="form-label">Coffee price</label>
-            <input type="text" class="form-control" name="coffee_price" aria-describedby="coffee_price">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="ch" class="form-check-input" name="has_sockets">
-            <label class="form-check-label" for="has_sockets">Has sockets</label>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" name="has_toilet">
-            <label class="form-check-label" for="has_toilet">Has toilet</label>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" name="has_wifi">
-            <label class="form-check-label" for="has_wifi">Has wi-fi</label>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" name="can_take_calls">
-            <label class="form-check-label" for="can_take_calls">Can take calls</label>
+    <div class="container">
+        <div class="row">
+            <form class="mt-5" action="/add_cafe", method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Cafe name</label>
+                    <input type="text" class="form-control" name="name" aria-describedby="cafe-name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="map_url" class="form-label">Map url</label>
+                    <input type="text" class="form-control" name="map_url" aria-describedby="map-url" required>
+                </div>
+                <div class="mb-3">
+                    <label for="img_url" class="form-label">Image url</label>
+                    <input type="text" class="form-control" name="img_url" aria-describedby="image-url" required>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" name="location" aria-describedby="location" required>
+                </div>
+                <div class="mb-3">
+                    <label for="seats" class="form-label">Seats</label>
+                    <input type="text" class="form-control" name="seats" aria-describedby="num-of-seats">
+                </div>
+                <div class="mb-3">
+                    <label for="coffee_price" class="form-label">Coffee price</label>
+                    <input type="text" class="form-control" name="coffee_price" aria-describedby="coffee_price">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" name="has_sockets">
+                    <label class="form-check-label" for="has_sockets">Has sockets</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" name="has_toilet">
+                    <label class="form-check-label" for="has_toilet">Has toilet</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" name="has_wifi">
+                    <label class="form-check-label" for="has_wifi">Has wi-fi</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" name="can_take_calls">
+                    <label class="form-check-label" for="can_take_calls">Can take calls</label>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </div>
         </div>
 
-        <button type="submit" class="btn btn-secondary">Submit</button>
     </form>
 {% endblock %}
