@@ -6,6 +6,6 @@
 
 <h2>Preview</h2>
 <h3>Homepage</h3>
-<img src="https://user-images.githubusercontent.com/91461938/190869454-d202f3b0-a604-46e2-9cba-dd3c9cd1723c.png">
+<img src="https://user-images.githubusercontent.com/91461938/192082422-45c3152f-8cfe-421f-b8bb-8d7fe6dda86b.png">
 <h3>Add cafe</h3>
-<img src="https://user-images.githubusercontent.com/91461938/190869455-1088dd18-f6f2-4c7f-bd8c-120825749bfa.png">
+<img src="https://user-images.githubusercontent.com/91461938/192082437-7de3dcea-cb37-4235-b84e-1ce57af813b7.png">
