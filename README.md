@@ -2,11 +2,11 @@
 
 Cafe and wifi website using flask and sqlite.
 
-## Description
+## Description:
 
 This is a website to find user friendly cafes around London. Users can add cafe name, map url, image url, location, number of seats, coffee price and optional data like if it has power sockets, toilets, has wifi or can take calls.
 
-### Preview
+### Preview:
 
 #### Homepage
 
