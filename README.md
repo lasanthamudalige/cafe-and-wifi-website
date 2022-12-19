@@ -46,13 +46,13 @@ To install sqlite3 on windows please refer to [this](https://www.configserverfir
 To run this project in Linux/Unix:
 
 ```
-$ python3 main.py
+$ python3 server.py
 ```
 
 To run this project in Windows:
 
 ```
-$ python main.py
+$ python server.py
 ```
 
 ## License 
