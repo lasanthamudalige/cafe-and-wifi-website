@@ -9,7 +9,7 @@ Cafe and wifi program using [Python](https://www.python.org/), [Sqlite3](https:/
 * [Usage](#usage)
 
 ## General info
-This 
+This is a website that showcase workfriendly cafes, restaurants, and hotel lobbies in London. Users can add new cafes into this. 
 
 ## Technologies
 Project is created with:
