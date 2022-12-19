@@ -1,17 +1,63 @@
 # CoffeSpot
 
-Cafe and wifi website using flask and sqlite.
+Cafe and wifi program using [Python](https://www.python.org/), [Sqlite3](https://docs.python.org/3/library/sqlite3.html) and [Flask](https://flask.palletsprojects.com/en/2.2.x/).
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Usage](#usage)
+
+## General info
+This 
+
+## Technologies
+Project is created with:
+* Python version: 3.10.6
+* Flask version: 9.0.1
+* SQLite3 version: 3.37.2
+	
+## Setup
+
+To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer.\
+From your command line run:
+
+```
+# Clone this repository
+$ git clone https://github.com/lasanthamudalige/image-watermarking-desktop-app.git
+
+# Go into the repository
+$ cd image-watermarking-desktop-app/
+
+# To install all dependencies
+$ pip install -r requirements.txt
+```
+
+To install sqlite3 on Linux:
+
+```
+$ sudo apt install sqlite3
+```
+
+To install sqlite3 on windows please refer to [this](https://www.configserverfirewall.com/windows-10/install-sqlite3-on-windows-10/) guide. 
+
+## Usage
+
+To run this project in Linux/Unix:
+
+```
+$ python3 main.py
+```
+
+To run this project in Windows:
+
+```
+$ python main.py
+```
+
+## License 
+This project is open source and available under the [MIT License](https://github.com/lasanthamudalige/cafe-and-wifi-website/blob/main/license).
 
 ## Description:
 
 This is a website to find user friendly cafes around London. Users can add cafe name, map url, image url, location, number of seats, coffee price and optional data like if it has power sockets, toilets, has wifi or can take calls.
-
-### Preview:
-
-#### Homepage
-
-<img src="https://user-images.githubusercontent.com/91461938/192082422-45c3152f-8cfe-421f-b8bb-8d7fe6dda86b.png">
-
-#### Add cafe page
-
-<img src="https://user-images.githubusercontent.com/91461938/192082437-7de3dcea-cb37-4235-b84e-1ce57af813b7.png">
