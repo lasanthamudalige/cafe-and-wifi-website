@@ -57,7 +57,3 @@ $ python main.py
 
 ## License 
 This project is open source and available under the [MIT License](https://github.com/lasanthamudalige/cafe-and-wifi-website/blob/main/license).
-
-## Description:
-
-This is a website to find user friendly cafes around London. Users can add cafe name, map url, image url, location, number of seats, coffee price and optional data like if it has power sockets, toilets, has wifi or can take calls.
